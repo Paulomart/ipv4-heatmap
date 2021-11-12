@@ -5,6 +5,13 @@ This software was inspired by https://xkcd.com/195/
 
 See http://maps.measurement-factory.com/ for additional information and a gallery of examples.
 
+# Docker Usage
+
+```bash
+docker build -t ipv4-heatmap .
+docker run -i --rm --init -v $(PWD)/output:/o/ ipv4-heatmap  -t Title -p -h -c 0 -o /o/test.png < /input.txt
+```
+
 # Dependencies
 
 - GD library
